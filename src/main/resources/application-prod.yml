@@ -1,0 +1,19 @@
+server:
+  port: 28083
+
+logging:
+  level:
+    ROOT: debug
+
+spring:
+  datasource:
+    url: jdbc:mysql://10.66.188.26:3306/dw_app_info
+    username: otter_repl
+    password: w#cSswb3hANcaZ$
+  kafka:
+    consumer:
+      bootstrap-servers: 10.105.76.210:9092,10.105.120.82:9092,10.154.5.218:9092,10.105.232.181:9092,10.105.106.155:9092,10.133.196.153:9092,10.105.99.250:9092
+      enable-auto-commit: true
+      auto-offset-reset: earliest
+    topic: dw_repair_appinfo_individual_job
+  tablefilter: 2

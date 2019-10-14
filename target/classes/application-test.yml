@@ -1,0 +1,18 @@
+server:
+  port: 28082
+
+logging:
+  level:
+    ROOT: debug
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: 12345678
+  kafka:
+    consumer:
+      bootstrap-servers: 127.0.0.1:9092
+      enable-auto-commit: true
+      auto-offset-reset: latest
+    topic: example1
